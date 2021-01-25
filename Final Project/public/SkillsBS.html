@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Skills</title>
+    <style>
+        body
+        {
+            overflow: hidden;
+            background: black;
+        }
+                  .head
+                  {
+                      text-align: center;
+                      color: hotpink;
+                      font-size: 50px;
+                      animation: anime 5s linear infinite;
+                  }
+                .navbar
+                {
+                /* background-color: black; */
+                width: 100%;
+                height: 80px;
+                line-height: 80px;
+                z-index: 1;
+                margin-bottom: -50px;
+                }
+                .fa-times
+                {
+                    font-size: 40px;
+                    list-style-type: none;
+                    color:  rgb(6, 223, 42);
+                    margin-top: 1.5%;
+                    padding: 15px;
+                    border-radius: 50%;
+                }
+                @keyframes anime
+                {
+                    0%
+                    {
+                        color:hotpink;
+                    }
+                    50%
+                    {
+                        color: orange;
+                        
+                    }
+                    100%
+                    {
+                    color: rgb(6, 223, 42);
+                    }
+                }
+    </style>
+</head>
+<body>
+    <div class="navbar" style="text-align: right;">
+        <a href="index.html" class="list-item"><i class="fas fa-times"></i></a>
+    </div>
+
+    <p class = "head" style = "font-family: 'Times New Roman', Times, serif;"> SKILLS </p>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4" style="margin-top: 50px;">
+        <div class="col"  style = "margin-left: 2%;">
+          <div class="card">
+            <img src="skill4.png" height = "163" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">GITHUB</h5>
+              <p class="card-text">Learnt github by actually performing git clone, fetching files, making some changes
+                   and merging them with remote code. Learnt about commands like push, pull, branching, status.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Skill2.jpeg" height = "163" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HTML & CSS</h5>
+              <p class="card-text">Have You ever wondered, a site without HTML & CSS. Well I know the answer is no,
+                  because As we know that HTML provides the structure of the page, CSS provides (visual and aural) layout.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Skill3.jpeg" height = "163" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">JAVASCRIPT</h5>
+              <p class="card-text">You can’t hate Javascript, there is no reason to hate or ignore Javascript, You can only love JavaScript
+                   because it is really easy to use and we can do amazing stuffs with Javascript.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col"  style = "margin-right: 2%;">
+          <div class="card">
+            <img src="Skill1.jpeg" height = "163" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">FIREBASE</h5>
+              <p class="card-text">Got to know about how to deploy your website using firebase console. Here we deployed
+                   our personal portfolio which can be accessed by anyone using the link.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

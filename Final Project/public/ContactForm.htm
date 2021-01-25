@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="ContactForm.css">
+    <title>Contact Form & Contact details</title>
+</head>
+<body>
+    <center>
+        <div class="navbar">
+            <a href="index.html" class="list-item"><i class="fas fa-times"></i></a>
+            </div>
+        <p class = "contact">Contact Us</p>
+        <form>
+            <input type="text" name = "fname" id = "fname" placeholder = "First Name" style="width: 25%; height: 40px;" required/>
+            <input type="text" name = "lname" id = "lname" placeholder = "Last Name" style="width: 25%; height: 40px;" required/><br><br><br>
+            <input type="text" name = "email" id = "email" placeholder = "Email Id" style="width: 25%; height: 40px;" required/>
+            <input type="text" name = "mobile" id = "mobile" placeholder = "Contact No." style="width: 25%; height: 40px;" required/><br><br><br>
+            <input type="text" name = "state" id = "state" placeholder = "State" style="width: 25%; height: 40px;" required/>
+            <input type="text" name = "country" id = "country" placeholder = "Country" style="width: 25%; height: 40px;" required/><br><br><br>
+            <input type="text" name = "subject" id = "subject" placeholder = "Subject of Contact" style="width: 52.5%; height: 40px;" required/><br><br><br>
+            <input type="text" name = "subject" id = "question" placeholder = "Your Question" style="width: 52.5%; height: 40px;" required/><br>
+            <br>
+            <br>
+            <input type="submit" name = "button" id = "btn" value="Submit" onclick = "AddDetails()">
+        </form>
+    </center>
+    <br>
+    <br>
+    <center>
+        <div class = "nav">
+            <p class="head"> GET IN TOUCH </p><br>
+            <p class="content"> ADDRESS<br> 48/7 Sinthimore Kolkata: 700050</p>
+            <p class="content"> CONTACT<br> +91 6290502415</p>
+            <p class="content"> EMAIL<br> 1905605@kiit.ac.in <br> akashshaw8783@gmail.com </p>
+        <div>
+        <div class = "social">
+            <ul>
+                <a href="#" class="instagram"></a><i class="fab fa-facebook-f"></i>
+                <a href="#" class="instagram"></a><i class="fab fa-instagram"></i>
+                <a href="#" class="twitter"></a><i class="fab fa-twitter"></i>
+                <a href="#" class="whatsapp"></a><i class="fab fa-whatsapp"></i>
+                <a href="#" class="linkedin"></a><i class="fab fa-linkedin"></i>
+            </ul>
+        </div>
+        <p class="end"> Thank you for contacting us. </p>
+    </center>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-storage.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC82zwDgZ1B4sl4LncHTlZ2CB6-8yKEhNM",
+    authDomain: "final-project-2d4ae.firebaseapp.com",
+    projectId: "final-project-2d4ae",
+    storageBucket: "final-project-2d4ae.appspot.com",
+    messagingSenderId: "551454364863",
+    appId: "1:551454364863:web:e186ece40bd4c73695620a",
+    measurementId: "G-WPB2PEL650"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.database();
+  
+</script>
+<script src = "contact.js"></script>
+</html>

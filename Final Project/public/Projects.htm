@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <title>Projects</title>
+    <style>
+        *
+        {
+            box-sizing: border-box;
+            background-color: black;
+            user-select: none;
+        }
+        .heading
+            {
+                margin-top: -20px;
+                text-align: center;
+                color: hotpink;
+                font-size: 50px;
+                text-decoration: none;
+                animation: anime 5s linear infinite;
+            }
+            @keyframes anime
+                {
+                    0%
+                    {
+                        color:hotpink;
+                    }
+                    50%
+                    {
+                        color: orange;
+                        
+                    }
+                    100%
+                    {
+                    color: rgb(6, 223, 42);
+                    }
+                }
+                .superParent
+                {
+                    text-align: center;
+                }
+                .Parent
+                {
+                    text-align: center;
+                }
+            div.Slider
+            {
+                color: white;
+                background-color: black;
+                border: 2px outset grey;
+                padding: 5px;
+                margin-left: 3%;
+                /* margin-right: 1%; */
+                margin-bottom: 9%;
+                width: 30vh;
+                float: left;
+                line-height: 25px;
+                border-radius: 7px;
+                margin-top: calc(2vh);
+            }
+            @media screen and (max-width: 600px)
+                {
+                    .Slider
+                    {
+                        margin-top: 0;
+                        width: 600px;
+                    }
+                    .superParent
+                    {
+                        margin-left: 0;
+                    }
+                }
+            .project_image
+            {
+                padding-bottom: 5px;
+            }
+            .project_image :hover
+            {
+                width: 180px;
+                height: 180px;
+            }
+            .project_name
+            {
+                text-decoration: underline;
+            }
+            .project_name:hover
+            {
+                color: hotpink;
+            }
+            .content_card:hover
+            {
+                text-decoration: underline;
+                color: yellow
+            }
+            .slider_card :hover
+            {
+                background-color: lightgrey; 
+            }
+            .navbar
+                {
+                text-align: right;
+                background-color: black;
+                width: 100%;
+                height: 80px;
+                line-height: 80px;
+                z-index: 1;
+                margin-bottom: -50px;
+                }
+                .fa-times
+                {
+                    font-size: 40px;
+                    list-style-type: none;
+                    color:  rgb(6, 223, 42);
+                    margin-top: 1.5%;
+                    margin-right: 2%;
+                    padding: 15px;
+                    border-radius: 50%;
+                }
+        </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="list-item"><i class="fas fa-times"></i></a>
+    </div>
+    <p class = "heading"> PROJECTS </p>
+    <div class ="superParent">
+    <div class = "Parent">
+    <div class = "Slider">
+        <p>
+            <h3 class = "project_name">ML Project</h3><br>
+            <img src="openCV.png" width = "150px" height="150px"><br>
+            <p class = "content_card">FACE RECOGNISTION<br>
+            Using Open CV<br>
+            & other Python<br>
+            Libraries<br>
+            </p>
+        </p>
+    </div>
+    <div class = "Slider">
+        <p>
+            <h3 class = "project_name">Web Dev Project</h3><br>
+            <img src="Portfolio.png" width = "150px" height="150px"><br>
+            <p class = "content_card">PERSONAL PORTFOLIO<br>
+            Using HTML<br>
+            CSS & JS<br>
+            & other library<br></p>
+        </p>
+    </div>
+    <div class = "Slider">
+        <p>
+            <h3 class = "project_name">Data Sci Project</h3><br>
+            <img src="DataScience.png" width = "150px" height="150px"><br>
+            <p class = "content_card">
+            DRIVER DROWSINESS<br>
+            Detection Using<br>
+            DL Models & Neural<br>
+            Networks<br>
+        </p>
+        </p>
+    </div>
+    <div class = "Slider">
+        <p>
+            <h3 class = "project_name">Android Project</h3><br>
+            <img src="Android Project.png" class = "project_image" width = "150px" height="150px"><br>
+            <p class = "content_card">
+            Food Ordering App<br>
+            Using recyclerview<br>
+            ViewModels &<br>
+            ScrollView<br>
+        </p>
+        </p>
+    </div>
+    <div class = "Slider">
+        <p>
+            <h3 class = "project_name">Web design Project</h3><br>
+            <img src="todo6.jpg" class = "project_image" width = "150px" height="150px"><br>
+            <p class = "content_card">
+            TODO Website<br>
+            Using HTML, CSS<br>
+            Javascript &<br>
+            PHP Language<br>
+        </p>
+        </p>
+    </div>
+</div>
+</div>
+</body>
+</html>
